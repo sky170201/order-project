@@ -1,0 +1,28 @@
+@import "antd/dist/antd.css";
+
+#root,
+.ant-layout {
+  height: 100%;
+}
+.ant-layout-header {
+  background-color: #fff;
+  padding: 0 20px;
+}
+.ant-breadcrumb {
+  padding: 0 20px;
+}
+
+.ant-layout-content {
+  background-color: #fff;
+  margin: 0 20px 20px;
+  padding: 20px;
+}
+
+.line {
+  height: 20px;
+}
+
+.ant-table {
+  max-height: 600px;
+  overflow: auto;
+}
