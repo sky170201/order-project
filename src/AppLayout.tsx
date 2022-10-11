@@ -23,7 +23,6 @@ export default function AppLayout() {
       routes.forEach((item) => {
       const path = item.route.path;
       const handle = item.route.handle;
-      console.log('path', path, handle);
       if ((!pathArr.includes(path as string)) && handle) {
         breadcrumbList.push(handle)
       }
@@ -33,7 +32,7 @@ export default function AppLayout() {
       })
     }
     setBreadcrumbList(breadcrumbList)
-    setDefaultSelectedKeys(pathArr);
+    setDefaultSelectedKeys([location.pathname]);
     setDefaultOpenKeys(pathArr);
     setIsInit(true);
   }, [location.pathname]);
